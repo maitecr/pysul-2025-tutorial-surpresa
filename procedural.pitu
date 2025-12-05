@@ -9,8 +9,8 @@ var letra_substituta = leia('Letra substituta: ')
  
 var frase_reescrita = ''
 
-para var i = 0; i < tamanho(frase); i = i + 1 :
-    frase_reescrita = frase_reescrita + (frase[i].substituir(letra_escolhida, letra_substituta))
+para cada i em frase:
+    frase_reescrita = frase_reescrita + (i.substituir(letra_escolhida, letra_substituta))
 
 imprima(frase_reescrita)
 
