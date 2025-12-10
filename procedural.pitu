@@ -1,13 +1,13 @@
-var frase = leia('Informe uma frase: ') 
+frase = leia('Informe uma frase: ') 
 
-var letra_escolhida = leia('Escolha a letra que quer substituir: ')
+letra_escolhida = leia('Escolha a letra que quer substituir: ')
 
 enquanto !(frase.inclui(letra_escolhida)):
     letra_escolhida = leia('Letra não existe na frase! Escolha outra: ')
 
-var letra_substituta = leia('Letra substituta: ')
+letra_substituta = leia('Letra substituta: ')
  
-var frase_reescrita = ''
+frase_reescrita = ''
 
 para cada i em frase:
     frase_reescrita = frase_reescrita + (i.substituir(letra_escolhida, letra_substituta))
